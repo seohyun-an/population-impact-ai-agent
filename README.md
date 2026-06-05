@@ -116,7 +116,3 @@ Potential future developments include:
 
 Independent software and data analysis project focused on demographic intelligence and industry forecasting.
 
-
-## Application Preview
-
-![Application Screenshot](images/app_screenshot.png)
