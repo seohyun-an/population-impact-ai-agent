@@ -1,61 +1,75 @@
 # Population Impact AI Agent
 
-A web-based demographic analysis application that evaluates population aging trends and recommends industries that may benefit from demographic changes.
+A web-based demographic analysis application that evaluates population aging trends and generates industry recommendations based on demographic indicators.
 
-## Overview
+## Application Preview
 
-Population Impact AI Agent analyzes demographic indicators such as:
+![Application Screenshot](images/app_screenshot.png)
 
-- Aging Rate
-- Population Size
-- Median Age
+---
 
-Based on these indicators, the application generates:
+## Project Motivation
 
-- Industry Recommendations
-- Demographic Analysis Reports
-- Population Trend Insights
+Population aging is one of the most significant demographic challenges facing modern societies.
 
-## Features
+I became interested in how demographic changes influence economic structures and industrial development. To explore this topic through software engineering and data analysis, I developed Population Impact AI Agent.
+
+The project combines demographic research, data analysis, visualization, and web application development into a single system.
+
+---
+
+## Key Features
 
 ### Demographic Analysis
 
-- Analyze aging rate by country
-- Display population size
-- Display median age
+The application analyzes:
+
+* Aging Rate
+* Population Size
+* Median Age
 
 ### Industry Recommendation System
 
-Recommended industries are generated according to demographic characteristics:
+Based on demographic characteristics, the system recommends industries that may benefit from future population trends.
 
-- Healthcare
-- Silver Industry
-- Medical Devices
-- Automation
-- Insurance
-- Education
-- Technology
+Examples include:
 
-### Interactive Web Application
+* Healthcare
+* Silver Industry
+* Medical Devices
+* Automation
+* Insurance
+* Education
+* Technology
+
+### Interactive Dashboard
 
 Built with Streamlit:
 
-- Country dropdown selection
-- Analyze button
-- Interactive user interface
+* Country selection dropdown
+* Demographic analysis dashboard
+* Industry recommendations
+* Analysis reports
+* Dataset overview
+* Top aging-country rankings
 
 ### Data Visualization
 
-- Country aging rate comparison chart
-- Demographic trend visualization
+* Country aging-rate comparison chart
+* Top aging-country ranking table
+* Dataset summary statistics
+
+---
 
 ## Technology Stack
 
-- Python
-- Pandas
-- Streamlit
-- Git
-- GitHub
+* Python
+* Pandas
+* Streamlit
+* Git
+* GitHub
+
+---
 
 ## Project Structure
 
@@ -64,41 +78,44 @@ population-impact-ai-agent
 
 ├── data
 │   └── countries.csv
-├── main.py
+├── images
+│   └── app_screenshot.png
 ├── app.py
+├── main.py
 ├── README.md
 └── .gitignore
 ```
 
-## Example Output
+---
 
-Country: South Korea
+## Learning Outcomes
 
-Aging Rate: 20.3%
+Through this project, I learned:
 
-Population: 51,700,000
+* Data analysis using Pandas
+* Data visualization techniques
+* Web application development with Streamlit
+* Version control using Git and GitHub
+* Translating demographic research into software solutions
 
-Median Age: 45.5
+---
 
-Recommended Industries:
+## Future Improvements
 
-- Healthcare
-- Automation
-- Insurance
+Potential future developments include:
 
-## Future Development
+* Larger demographic datasets
+* Advanced demographic forecasting
+* Machine learning models
+* AI-generated reports
+* Real-time demographic data integration
 
-Planned improvements:
-
-- Larger demographic datasets
-- Advanced population forecasting
-- AI-generated reports
-- Enhanced data visualizations
-- Global demographic comparisons
+---
 
 ## Author
 
-Developed as an independent data analysis and software engineering project focused on demographic intelligence and industry forecasting.
+Independent software and data analysis project focused on demographic intelligence and industry forecasting.
+
 
 ## Application Preview
 
