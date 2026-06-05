@@ -11,6 +11,24 @@ if len(result) > 0:
 
     print(f"Country: {country}")
     print(f"Aging Rate: {aging_rate}%")
+    print()
+
+    print("Recommended Industries:")
+
+    if aging_rate >= 25:
+        print("- Healthcare")
+        print("- Silver Industry")
+        print("- Medical Devices")
+
+    elif aging_rate >= 15:
+        print("- Healthcare")
+        print("- Automation")
+        print("- Insurance")
+
+    else:
+        print("- Education")
+        print("- Consumer Goods")
+        print("- Technology")
 
 else:
     print("Country not found.")
