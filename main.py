@@ -10,13 +10,19 @@ country = input("Country: ")
 result = df[df["country"] == country]
 
 if len(result) > 0:
+
+    # Extract demographic data
     aging_rate = result.iloc[0]["aging_rate"]
+    population = result.iloc[0]["population"]
+    median_age = result.iloc[0]["median_age"]
 
-    print(f"Country: {country}")
+    # Display country information
+    print(f"\nCountry: {country}")
     print(f"Aging Rate: {aging_rate}%")
-    print()
+    print(f"Population: {population:,}")
+    print(f"Median Age: {median_age}")
 
-    print("Recommended Industries:")
+    print("\nRecommended Industries:")
 
     if aging_rate >= 25:
         industries = [
@@ -28,6 +34,8 @@ if len(result) > 0:
         report = f"""
 Analysis Report:
 {country} has a very high aging rate.
+
+With a median age of {median_age}, the country faces significant demographic aging.
 
 Healthcare services, medical devices, and senior-focused industries
 are likely to experience strong growth in the future.
@@ -47,6 +55,8 @@ in healthcare, elderly care, and age-friendly technologies.
 Analysis Report:
 {country} is experiencing a noticeable aging trend.
 
+The country has a population of {population:,} people and a median age of {median_age}.
+
 Demand for healthcare, automation, and insurance services
 is expected to increase as the population structure changes.
 
@@ -64,6 +74,8 @@ may benefit from this demographic shift.
         report = f"""
 Analysis Report:
 {country} still has a relatively young population.
+
+With a median age of {median_age}, the country maintains a comparatively young demographic structure.
 
 Education, technology, and consumer markets may continue
 to expand in the coming years.

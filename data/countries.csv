@@ -1,31 +1,11 @@
-country,aging_rate
-South Korea,20.3
-Japan,29.1
-Germany,22.5
-Thailand,14.2
-Italy,24.1
-Spain,20.8
-France,18.8
-United Kingdom,19.1
-United States,17.3
-Canada,18.5
-Australia,17.0
-China,15.4
-Singapore,19.2
-Taiwan,18.9
-Netherlands,20.0
-Sweden,20.4
-Norway,18.1
-Denmark,19.0
-Finland,22.1
-Switzerland,19.6
-Austria,19.4
-Belgium,19.2
-Portugal,24.0
-Greece,23.5
-Poland,18.7
-Czech Republic,20.1
-Hungary,20.0
-Romania,18.4
-Bulgaria,22.0
-Croatia,22.8
+country,aging_rate,population,median_age
+South Korea,20.3,51700000,45.5
+Japan,29.1,123000000,49.5
+Germany,22.5,84000000,45.7
+Thailand,14.2,71800000,40.7
+Italy,24.1,59000000,48.4
+France,18.8,68000000,42.3
+United States,17.3,340000000,38.9
+China,15.4,1410000000,39.7
+Singapore,19.2,6000000,43.4
+Canada,18.5,41000000,41.7
