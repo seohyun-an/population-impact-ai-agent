@@ -1,14 +1,3 @@
-구조는 이렇게 될 거야.
-
-population-impact-ai-agent
-
-├── data
-│   └── countries.csv
-├── main.py
-└── README.md
-Step 2. 아래 내용 복붙
-
-README.md에 아래 내용을 넣어.
 
 # Population Impact AI Agent
 
