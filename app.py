@@ -6,6 +6,42 @@ df = pd.read_csv("data/countries.csv")
 
 st.title("Population Impact AI Agent")
 
+# Dashboard Overview
+
+st.header("Dataset Overview")
+
+num_countries = len(df)
+
+avg_aging_rate = round(df["aging_rate"].mean(), 1)
+
+highest_country = df.loc[df["aging_rate"].idxmax()]
+lowest_country = df.loc[df["aging_rate"].idxmin()]
+
+st.write(f"**Number of Countries:** {num_countries}")
+
+st.write(f"**Average Aging Rate:** {avg_aging_rate}%")
+
+st.write(
+    f"**Highest Aging Rate:** "
+    f"{highest_country['country']} "
+    f"({highest_country['aging_rate']}%)"
+)
+
+st.write(
+    f"**Lowest Aging Rate:** "
+    f"{lowest_country['country']} "
+    f"({lowest_country['aging_rate']}%)"
+)
+
+st.header("Top 10 Aging Countries")
+
+top10 = df.sort_values(
+    by="aging_rate",
+    ascending=False
+)[["country", "aging_rate"]].head(10)
+
+st.dataframe(top10)
+
 # Country dropdown
 country = st.selectbox(
     "Select Country",
