@@ -1,28 +1,105 @@
-
 # Population Impact AI Agent
 
-A Python-based project that analyzes demographic trends and recommends industries that may benefit from population changes.
+A web-based demographic analysis application that evaluates population aging trends and recommends industries that may benefit from demographic changes.
 
-## Current Features
+## Overview
 
-- Country input
-- Population data storage using CSV
-- Data loading with Pandas
+Population Impact AI Agent analyzes demographic indicators such as:
 
-## Future Features
+- Aging Rate
+- Population Size
+- Median Age
 
-- Aging rate analysis
-- Industry recommendation system
-- AI-generated reports
-- Streamlit web interface
+Based on these indicators, the application generates:
 
-## Technologies
+- Industry Recommendations
+- Demographic Analysis Reports
+- Population Trend Insights
+
+## Features
+
+### Demographic Analysis
+
+- Analyze aging rate by country
+- Display population size
+- Display median age
+
+### Industry Recommendation System
+
+Recommended industries are generated according to demographic characteristics:
+
+- Healthcare
+- Silver Industry
+- Medical Devices
+- Automation
+- Insurance
+- Education
+- Technology
+
+### Interactive Web Application
+
+Built with Streamlit:
+
+- Country dropdown selection
+- Analyze button
+- Interactive user interface
+
+### Data Visualization
+
+- Country aging rate comparison chart
+- Demographic trend visualization
+
+## Technology Stack
 
 - Python
 - Pandas
+- Streamlit
 - Git
 - GitHub
 
-## Project Status
+## Project Structure
 
-Currently under development.
+```text
+population-impact-ai-agent
+
+├── data
+│   └── countries.csv
+├── main.py
+├── app.py
+├── README.md
+└── .gitignore
+```
+
+## Example Output
+
+Country: South Korea
+
+Aging Rate: 20.3%
+
+Population: 51,700,000
+
+Median Age: 45.5
+
+Recommended Industries:
+
+- Healthcare
+- Automation
+- Insurance
+
+## Future Development
+
+Planned improvements:
+
+- Larger demographic datasets
+- Advanced population forecasting
+- AI-generated reports
+- Enhanced data visualizations
+- Global demographic comparisons
+
+## Author
+
+Developed as an independent data analysis and software engineering project focused on demographic intelligence and industry forecasting.
+
+## Application Preview
+
+![Application Screenshot](images/app_screenshot.png)
