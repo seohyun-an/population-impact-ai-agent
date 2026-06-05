@@ -1,9 +1,12 @@
 import pandas as pd
 
+# Load country data
 df = pd.read_csv("data/countries.csv")
 
+# User input
 country = input("Country: ")
 
+# Search country
 result = df[df["country"] == country]
 
 if len(result) > 0:
@@ -16,41 +19,63 @@ if len(result) > 0:
     print("Recommended Industries:")
 
     if aging_rate >= 25:
-        print("- Healthcare")
-        print("- Silver Industry")
-        print("- Medical Devices")
-        report = """
+        industries = [
+            "Healthcare",
+            "Silver Industry",
+            "Medical Devices"
+        ]
+
+        report = f"""
 Analysis Report:
-This country has a very high aging rate.
+{country} has a very high aging rate.
+
 Healthcare services, medical devices, and senior-focused industries
 are likely to experience strong growth in the future.
+
+The increasing elderly population may create new business opportunities
+in healthcare, elderly care, and age-friendly technologies.
 """
 
     elif aging_rate >= 15:
-        print("- Healthcare")
-        print("- Automation")
-        print("- Insurance")
-        report = """
+        industries = [
+            "Healthcare",
+            "Automation",
+            "Insurance"
+        ]
+
+        report = f"""
 Analysis Report:
-This country is experiencing a noticeable aging trend.
+{country} is experiencing a noticeable aging trend.
+
 Demand for healthcare, automation, and insurance services
 is expected to increase as the population structure changes.
+
+Businesses that improve productivity and support an aging workforce
+may benefit from this demographic shift.
 """
 
     else:
-        print("- Education")
-        print("- Consumer Goods")
-        print("- Technology")
-        report = """
+        industries = [
+            "Education",
+            "Consumer Goods",
+            "Technology"
+        ]
+
+        report = f"""
 Analysis Report:
-This country still has a relatively young population.
+{country} still has a relatively young population.
+
 Education, technology, and consumer markets may continue
 to expand in the coming years.
+
+A growing young population can support innovation,
+workforce growth, and consumer demand.
 """
+
+    for industry in industries:
+        print(f"- {industry}")
+
+    print(report)
 
 else:
     print("Country not found.")
-
-
-print()
-print(report)
